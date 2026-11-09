@@ -20,24 +20,24 @@ export class CounterComponent {
   onDecrement() {
     this.count.update((prevCount) => prevCount - 1);
   }
-  
- getUser(): Promise<string> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('Teodora');
-    }, 2000);
-  });
-}
+
+  getUser(): Promise<string> {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('Teodora');
+      }, 2000);
+    });
+  }
 
 
-onIncrement() {
-  this.count.update((prevCount) => prevCount + 1);
-  this.getUser().then((user) => {
-  console.log(user);
-  console.log('aici');
-  
-});
-}
+  onIncrement() {
+    this.count.update((prevCount) => prevCount + 1);
+    this.getUser().then((user) => {
+      console.log(user);
+      console.log('aici');
 
-  
+    });
+  }
+
+
 }
