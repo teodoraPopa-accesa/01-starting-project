@@ -24,7 +24,7 @@ export class CounterComponent {
   getUser(): Promise<string> {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve('Teodora');
+        resolve('iOANA');
       }, 2000);
     });
   }
