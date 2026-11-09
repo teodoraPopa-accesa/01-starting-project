@@ -17,7 +17,7 @@ export class CounterComponent {
     return 'Counter Component Debug Output';
   }
 
-  onDecrement() {
+  ondecrement() {
     this.count.update((prevCount) => prevCount - 1);
   }
 
